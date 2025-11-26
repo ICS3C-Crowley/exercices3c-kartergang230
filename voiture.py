@@ -1,3 +1,4 @@
+# 43 - bibliothèque standard
 import tkinter as tk
 import random
 import time
@@ -205,9 +206,8 @@ class GameApp:
             self.draw()
 
 def main():
-    root = tk.Tk()
-    app = GameApp(root)
-    root.mainloop()
+    app = GameApp(tk.Tk())
+    app.root.mainloop()
 
 if __name__ == "__main__":
     main()
